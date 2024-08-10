@@ -1,0 +1,230 @@
+.product-display {
+    margin: 20px 130px;
+    /* background-color: rgb(233, 189, 189); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vw;
+    height: 80vh;
+}
+
+.product-display-right {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* border: 2px solid red; */
+
+}
+
+.image-list-product {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.image-list-product img {
+    height: 23vh;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.image-product {
+}
+
+.image-product img {
+    width: 100%;
+    object-fit: contain;
+    height: 98%;
+}
+
+.product-display-left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    /* border: 2px solid red; */
+}
+.product-display-left h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.left-product-stars{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.product-right-prices{
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.new-price{
+    color: rgb(163, 23, 23);
+}
+.light-price{
+    text-decoration: line-through;
+}
+.product-right-description{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.product-select-size{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.product-select-size h1{
+    font-size: 25px;
+}
+.display-size{
+    display: flex;
+    gap:30px;
+}
+.display-size div{
+    border: 1px solid rgb(121, 105, 105);
+padding: 15px;
+border-radius: 6px;
+cursor: pointer;
+}
+.button-product{
+    background-color: red;
+    height: 5vh;
+    width: 10vw;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.category-tags{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+}
+.category-tags span{
+    font-weight: 900;
+}
+
+
+
+@media(max-width:600px)
+{
+    .product-display {
+        margin: 20px 5px;
+        display: flex;
+        flex-direction: column;
+    
+        height: 140vh;
+        background-color: hwb(42 78% 3%);
+
+    }
+    
+    .product-display-right {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        /* border: 2px solid red; */
+        height: 50vh;
+    }
+    
+    .image-list-product {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .image-list-product img {
+        height: 23vh;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .image-product {
+    }
+    
+    .image-product img {
+        width: 100%;
+        object-fit: contain;
+        height: 98%;
+    }
+    
+    .product-display-left {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        /* border: 2px solid red; */
+    }
+    .product-display-left h1{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .left-product-stars{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+    .product-right-prices{
+        display: flex;
+        gap: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    .new-price{
+        color: rgb(163, 23, 23);
+    }
+    .light-price{
+        text-decoration: line-through;
+    }
+    .product-right-description{
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 95%;
+        margin-left:3px ;
+    }
+    .product-select-size{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .product-select-size h1{
+        font-size: 25px;
+    }
+    .display-size{
+        display: flex;
+        justify-content: space-around;
+        gap:20px;
+    }
+    .display-size div{
+        border: 1px solid rgb(121, 105, 105);
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    }
+    .button-product{
+        background-color: red;
+        height: 7vh;
+        width: 50vw;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .category-tags{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 20px;
+    }
+    .category-tags span{
+        font-weight: 900;
+    }
+}

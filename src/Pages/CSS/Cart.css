@@ -1,0 +1,45 @@
+/* CSS/Cart.css */
+.cart {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border: 2px solid red;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-details h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.cart-item-details p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.cart-item p {
+    margin: 0;
+}

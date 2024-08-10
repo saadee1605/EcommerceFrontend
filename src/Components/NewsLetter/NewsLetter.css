@@ -1,0 +1,120 @@
+.news-letter {
+    background-color: #FFF5EE;
+    /* border: 2px solid red; */
+    margin: 20px 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px;
+}
+
+.news-letter-dark-p {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.news-letter-light-p {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.email-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.email-button {
+    width: 30vw;
+    height: 6vh;
+    border: 0.01px solid black;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-button input {
+
+    border-radius: 20px;
+    background-color: #FFF5EE;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    
+
+
+
+}
+
+.email-button button {
+    width: 8vw;
+    height: 100%;
+    border-radius: 0px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+
+
+}
+@media(max-width:600px)
+{
+    .news-letter {
+        background-color: hwb(42 78% 3%);
+        /* border: 2px solid red; */
+        margin: 20px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .news-letter-dark-p {
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    
+    .news-letter-light-p {
+        font-size: 20px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .email-button {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .email-button {
+        width: 86vw;
+        height: 6vh;
+        border: 0.01px solid black;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .email-button input {
+        border-radius: 20px;
+        background-color: hwb(42 78% 3%);
+        font-size: 16px;
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        /* border: 2px solid red; */
+
+    }
+    .email-button button {
+        width: 22vw;
+        height: 100%;
+        border-radius: 0px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border: none;
+        outline: none;
+    }   
+}

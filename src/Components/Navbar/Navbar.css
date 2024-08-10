@@ -1,0 +1,267 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: hwb(42 78% 7%);
+}
+
+.navbar {
+    display: flex;
+    /* border: 2px solid red; */
+    margin: 0px 130px;
+    justify-content: space-around;
+    font-size: 25px;
+    height: 15vh;
+
+}
+
+.navbar-logo {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navbar-logo p {
+
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+
+.navbar-ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    /* border: 2px solid orange; */
+
+}
+
+.navbar-li {
+    list-style: none;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.navbar-login-cart {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.navbar-login-cart button {
+    height: 7vh;
+    width: 8vw;
+    border-radius: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.navbar-login-cart img {
+    margin-left: 28px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: black;
+}
+
+.new-class {
+    font-size: 30px;
+    border-bottom: 4px solid red;
+}
+
+.cart-counter {
+    background-color: red;
+    height: 22px;
+    width: 22px;
+    border-radius: 10px;
+    position: relative;
+    right: 14px;
+    bottom: 25px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close-navbar{
+    display: none;
+}
+.open-navbar{
+    display: none;
+}
+
+@media (max-width:600px) {
+    .navbar {
+        display: flex;
+        margin: 0px 0px;
+        justify-content: space-between;
+        font-size: 20px;
+        height: 9vh;
+        border: 2px solid red;
+        /* width: 100%; */
+        overflow: hidden;
+        /* z-index: 2; */
+
+    }
+
+    .navbar-logo {
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 38%;
+    }
+
+    .navbar-logo img {
+        /* border: 2px solid black; */
+        height: 100%;
+    }
+
+    .navbar-logo p {
+        /* border: 2px solid brown; */
+        font-size: 16px;
+        width: 100px;
+    }
+
+    .close-navbar {
+        display: block;
+        margin-top: 20px;
+        /* color: black; */
+        /* margin-bottom: 40px; */
+        /* border: 2px solid red; */
+    }
+
+    .open-navbar {
+        display: block;
+        height: 30px;
+        /* border: 2px solid red; */
+        position: absolute;
+        right: 15px;
+        top:12px;
+        height: 44px;
+        width: 30px;
+    }
+
+    .navbar-logo p {
+
+        /* font-weight: bold;
+        margin-left: 10px; */
+
+    }
+
+    .navbar-ul {
+        display: flex;
+       flex-direction: column;
+       height: 100vh;
+       background-color:  hwb(43 63% 8%);
+       position: absolute;
+       width: 200px;
+       display: block;
+       right: -300px;
+       visibility: hidden;
+       transition: all  0.5s;
+       top:0px;
+       z-index: 100;
+    }
+
+
+
+
+    .navbar-li {
+        /* border: 2px solid white; */
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+        height: 5vh;
+        transition: all 0.2s;
+        /* list-style: none;
+        gap: 30px;
+        cursor: pointer; */
+        font-size: 20px;
+    }
+    .new-class {
+        font-size: 24px;
+        border-bottom: 2px solid red;
+    }
+
+    .navbar-login-cart {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        /* border: 2px solid black; */
+        margin-right: 70px;
+        align-items: center;
+        width: 115px;
+    }
+
+    .navbar-login-cart button {
+        height: 5vh;
+        width: 15vw;
+        border-radius: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        /* justify-content: center;
+        align-items: center; */
+        font-weight: 700;
+        margin-top: 11px;
+        
+        
+    }
+
+
+    .navbar-login-cart img {
+        margin-left: 0px;
+        margin-top: 20px;
+        /* border: 2px solid grey; */
+        height: 30px;
+        width: 30px;
+    }
+
+   
+
+    .cart-counter {
+        background-color: red;
+        height: 15px;
+        width: 20px;
+        border-radius: 8px;
+        position: absolute;
+        right: 150px;
+        top: 20px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+/* .navbar {
+        margin: 2px 5px;
+        border: 2px solid red;
+    }
+
+    .navbar-ul {
+        display: none;
+    }
+
+    .navbar-login-cart {
+        display: flex;
+    } */

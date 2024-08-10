@@ -1,0 +1,84 @@
+.offers {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    background-color: #FFF5EE;
+    margin: 0 130px;
+    gap: 20px; /* Add gap for spacing between columns */
+}
+
+.offers-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Use flex-start for left alignment */
+    gap: 20px;
+}
+
+.offers-right-bold-p {
+    font-size: 65px;
+    font-weight: bolder;
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.offers-right-lessbold-p {
+    font-size: 30px;
+}
+
+.offers-button {
+    height: 8vh;
+    width: 10vw;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 44px;
+    margin-top: 15px;
+}
+
+.inner-right {
+    width: 60%;
+    margin-left: 40px;
+}
+
+@media (max-width: 600px) {
+    .offers {
+        display: flex;
+        flex-direction: column;
+        background-color: hwb(42 78% 3%);
+        margin: 15px 5px;
+    }
+
+    .offers-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .offers-right-bold-p {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        width: 100%; /* Adjust width for better layout */
+    }
+
+    .offers-right-lessbold-p {
+        font-size: 20px;
+    }
+
+    .offers-button {
+        height: 8vh;
+        width: 60%; 
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 44px;
+        margin:15px auto;
+        background-color: antiquewhite;
+        
+    }
+
+    .inner-right {
+        width: 100%;
+        margin-left: 0; /* Adjust margin for smaller screens */
+    }
+}
