@@ -27,7 +27,7 @@ function CartItem() {
             <h1>Items:{totalQuantity}</h1>
             {allCartsData.map((element, index) => (
                 element.itemQuantity > 0 && (
-                    <div className="cart-item" key={element.id}>lll
+                    <div className="cart-item" key={element.id}>
                         <img src={element.image} alt={element.name} />
                         <div className="cart-item-data">
                             <div className='cart-item-name'>{element.name}</div>
